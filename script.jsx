@@ -4,7 +4,7 @@ getInitialState: function() {
 },
 render: function() {
   return (
-  <button>{this.state.counter}</button>
+  <button onClick={}>{this.state.counter}</button>
   )
  }
 });
