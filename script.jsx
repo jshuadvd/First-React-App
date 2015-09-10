@@ -4,7 +4,7 @@ getInitialState: function() {
 },
 render: function() {
   return (
-  <buton>Go</button>
+  <button>Go</button>
   )
  }
 });
