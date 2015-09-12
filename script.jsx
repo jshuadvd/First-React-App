@@ -2,7 +2,7 @@ var Button = React.createClass({
 
 render: function() {
   return (
-  <button onClick={this.handleClick}>+1</button>
+  <button onClick={this.props.localHandleClick}>+1</button>
   )
  }
 });
