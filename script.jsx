@@ -11,4 +11,10 @@ render: function() {
   )
  }
 });
+
+var Result = React.createClass({
+  render: function() {
+    <div>XXX</div>
+  }
+})
 React.render(<Button />, document.getElementById("root"));
