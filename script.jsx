@@ -27,7 +27,7 @@ var Main = React.createClass({
 
   render: function() {
     return ( < div >
-      < Button / >
+      < Button localHandleClick={this.handleClick}/ >
       < Result / >
       < /div>
     )
