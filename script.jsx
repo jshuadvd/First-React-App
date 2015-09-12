@@ -7,7 +7,7 @@ handleClick : function() {
 },
 render: function() {
   return (
-  <button onClick={this.handleClick}>{this.state.counter}</button>
+  <button onClick={this.handleClick}>+1</button>
   )
  }
 });
