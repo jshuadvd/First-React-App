@@ -21,13 +21,19 @@ var Result = React.createClass({
 })
 
 var Main = React.createClass({
+  getInitialState: function() {
+    return {
+      counter: 0
+    };
+  },
+
   render: function() {
-    return (
-      <div>
-        <Button />
-        <Result />
-      </div>
+    return ( < div >
+      < Button / >
+      < Result / >
+      < /div>
     )
   }
 })
-React.render(<Main />, document.getElementById("root"));
+
+React.render( < Main / > , document.getElementById("root"));
