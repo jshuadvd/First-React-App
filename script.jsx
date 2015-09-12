@@ -10,7 +10,7 @@ render: function() {
 var Result = React.createClass({
   render: function() {
     return (
-      <div>XXX</div>
+      <div>{this.props.localCounter}</div>
    )
   }
 })
@@ -26,10 +26,11 @@ var Main = React.createClass({
   },
 
   render: function() {
-    return ( < div >
-      < Button localHandleClick={this.handleClick}/ >
-      < Result / >
-      < /div>
+    return (
+      <div>
+      <Button localHandleClick={this.handleClick}/>
+      <Result localCounter={this.state.counter}/>
+      </div>
     )
   }
 })
