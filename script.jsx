@@ -14,7 +14,20 @@ render: function() {
 
 var Result = React.createClass({
   render: function() {
-    <div>XXX</div>
+    return (
+      <div>XXX</div>
+   )
   }
 })
-React.render(<Button />, document.getElementById("root"));
+
+var Main = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Button />
+        <Result />
+      </div>
+    )
+  }
+})
+React.render(<Main />, document.getElementById("root"));
