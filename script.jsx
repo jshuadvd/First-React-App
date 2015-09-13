@@ -1,15 +1,13 @@
-// Testing github commits
 var Button = React.createClass({
 
 localHandleClick : function( {
   this.props.localHandleClick(this.props.increment);
-
-})
+},
 render: function() {
   return (
   <button onClick={this.localHandleClick}>+{this.props.increment}</button>
   )
- }
+}
 });
 
 var Result = React.createClass({
@@ -26,7 +24,7 @@ var Main = React.createClass({
       counter: 0
     };
   },
-  handleClick : function() {
+  handleClick : function(increment) {
     this.setState({ counter: this.state.counter+increment });
   },
 
