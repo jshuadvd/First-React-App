@@ -28,8 +28,11 @@ var Main = React.createClass({
   render: function() {
     return (
       <div>
-      <Button localHandleClick={this.handleClick} increment={1}/>
-      <Result localCounter={this.state.counter}/>
+        <Button localHandleClick={this.handleClick} increment={1}/>
+        <Button localHandleClick={this.handleClick} increment={24}/>
+        <Button localHandleClick={this.handleClick} increment={48}/>
+        <Button localHandleClick={this.handleClick} increment={12}/>
+        <Result localCounter={this.state.counter}/>
       </div>
     )
   }
